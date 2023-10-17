@@ -194,15 +194,26 @@ class AviationDualTimeView extends WatchUi.WatchFace {
         batteryDisplay = View.findDrawableById("batLabel") as Text;
 
         if (showBat == 0) {
+    
             var batLoad = ((System.getSystemStats().battery) + 0.5).toNumber();
             batString = Lang.format("$1$", [batLoad])+"%";
 
-            if (batLoad < 5.0) {
-                batteryDisplay.setColor(Graphics.COLOR_RED);
-            } else if (batLoad < 25.0) {
-                batteryDisplay.setColor(Graphics.COLOR_YELLOW);
+            if (System has :SCREEN_SHAPE_SEMI_OCTAGON &&
+                System.getDeviceSettings().screenShape != System.SCREEN_SHAPE_SEMI_OCTAGON){     //Monocrhrome correction
+
+                if (batLoad < 5.0) {
+                    batteryDisplay.setColor(Graphics.COLOR_RED);
+                } else if (batLoad < 25.0) {
+                    batteryDisplay.setColor(Graphics.COLOR_YELLOW);
+                } else {
+                    batteryDisplay.setColor(Graphics.COLOR_DK_GREEN);
+                }
             } else {
-                batteryDisplay.setColor(Graphics.COLOR_DK_GREEN);
+                if (myBackgroundColor == 0xFFFFFF) {
+                    batteryDisplay.setColor(Graphics.COLOR_BLACK);
+                } else {
+                    batteryDisplay.setColor(Graphics.COLOR_WHITE);
+                }
             }
         } else {
             batString = " ";
@@ -281,7 +292,7 @@ class AviationDualTimeView extends WatchUi.WatchFace {
 
                 dispZuluTime.setText(" ");  //Clear residual
                 subZuluOffset.setText(" ");
-
+                stepsDisp();
                 stepDisplay.setText(stepString);
             }
         } else {
@@ -301,6 +312,7 @@ class AviationDualTimeView extends WatchUi.WatchFace {
             } else {
                 subZuluOffset.setText(" ");         //Clear residual
                 dispZuluTime.setText(" ");          //Clear residual
+                stepsDisp();
                 stepDisplay.setText(stepString);
             }
         }
