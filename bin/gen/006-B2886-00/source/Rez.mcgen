@@ -17,7 +17,7 @@ module Rez {
 
     module Layouts {
         function WatchFace(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
-            var rez_cmp_local_custom_drawable_92634558719757311191 = new Background();
+            var rez_cmp_local_custom_drawable_13413616423297959432 = new Background();
 
             var rez_cmp_local_text_mainTimeAreaShadLabel = new WatchUi.Text({:identifier=>"mainTimeAreaShadLabel", :color=>Graphics.COLOR_WHITE, :locX=>(240 * (51 / 100.0)), :locY=>(240 * (24 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_NUMBER_THAI_HOT});
 
@@ -39,7 +39,7 @@ module Rez {
 
             var rez_cmp_local_text_subZuluLabel = new WatchUi.Text({:identifier=>"subZuluLabel", :color=>Graphics.COLOR_LT_GRAY, :locX=>(240 * 0.5), :locY=>(240 * (88 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_XTINY});
 
-            return [rez_cmp_local_custom_drawable_92634558719757311191, rez_cmp_local_text_mainTimeAreaShadLabel, rez_cmp_local_text_mainTimeAreaLabel, rez_cmp_local_text_zTimeLabel, rez_cmp_local_text_zuluLabel, rez_cmp_local_text_dateLabel, rez_cmp_local_text_batLabel, rez_cmp_local_text_alarmLabel, rez_cmp_local_text_noteLabel, rez_cmp_local_text_stepLabel, rez_cmp_local_text_subZuluLabel] as Array<WatchUi.Drawable>;
+            return [rez_cmp_local_custom_drawable_13413616423297959432, rez_cmp_local_text_mainTimeAreaShadLabel, rez_cmp_local_text_mainTimeAreaLabel, rez_cmp_local_text_zTimeLabel, rez_cmp_local_text_zuluLabel, rez_cmp_local_text_dateLabel, rez_cmp_local_text_batLabel, rez_cmp_local_text_alarmLabel, rez_cmp_local_text_noteLabel, rez_cmp_local_text_stepLabel, rez_cmp_local_text_subZuluLabel] as Array<WatchUi.Drawable>;
         }
     } // Layouts
 

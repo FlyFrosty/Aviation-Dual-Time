@@ -17,7 +17,7 @@ module Rez {
 
     module Layouts {
         function WatchFace(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
-            var rez_cmp_local_custom_drawable_16003704154242294321 = new Background();
+            var rez_cmp_local_custom_drawable_93023706072670883394 = new Background();
 
             var rez_cmp_local_text_mainTimeAreaShadLabel = new WatchUi.Text({:identifier=>"mainTimeAreaShadLabel", :color=>Graphics.COLOR_WHITE, :locX=>(176 * (38 / 100.0)), :locY=>(176 * (33 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_NUMBER_HOT});
 
@@ -29,7 +29,7 @@ module Rez {
 
             var rez_cmp_local_text_dateLabel = new WatchUi.Text({:identifier=>"dateLabel", :color=>Graphics.COLOR_LT_GRAY, :locX=>(176 * 0.5), :locY=>(176 * (57 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_MEDIUM});
 
-            var rez_cmp_local_text_batLabel = new WatchUi.Text({:identifier=>"batLabel", :color=>Graphics.COLOR_LT_GRAY, :locX=>(176 * (83 / 100.0)), :locY=>(176 * (18 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_TINY});
+            var rez_cmp_local_text_batLabel = new WatchUi.Text({:identifier=>"batLabel", :color=>Graphics.COLOR_LT_GRAY, :locX=>(176 * (83 / 100.0)), :locY=>(176 * (10 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_TINY});
 
             var rez_cmp_local_text_alarmLabel = new WatchUi.Text({:identifier=>"alarmLabel", :color=>Graphics.COLOR_DK_GREEN, :locX=>(176 * (30 / 100.0)), :locY=>(176 * (10 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_TINY});
 
@@ -39,7 +39,7 @@ module Rez {
 
             var rez_cmp_local_text_subZuluLabel = new WatchUi.Text({:identifier=>"subZuluLabel", :color=>Graphics.COLOR_LT_GRAY, :locX=>(176 * (53 / 100.0)), :locY=>(176 * (86 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_XTINY});
 
-            return [rez_cmp_local_custom_drawable_16003704154242294321, rez_cmp_local_text_mainTimeAreaShadLabel, rez_cmp_local_text_mainTimeAreaLabel, rez_cmp_local_text_zTimeLabel, rez_cmp_local_text_zuluLabel, rez_cmp_local_text_dateLabel, rez_cmp_local_text_batLabel, rez_cmp_local_text_alarmLabel, rez_cmp_local_text_noteLabel, rez_cmp_local_text_stepLabel, rez_cmp_local_text_subZuluLabel] as Array<WatchUi.Drawable>;
+            return [rez_cmp_local_custom_drawable_93023706072670883394, rez_cmp_local_text_mainTimeAreaShadLabel, rez_cmp_local_text_mainTimeAreaLabel, rez_cmp_local_text_zTimeLabel, rez_cmp_local_text_zuluLabel, rez_cmp_local_text_dateLabel, rez_cmp_local_text_batLabel, rez_cmp_local_text_alarmLabel, rez_cmp_local_text_noteLabel, rez_cmp_local_text_stepLabel, rez_cmp_local_text_subZuluLabel] as Array<WatchUi.Drawable>;
         }
     } // Layouts
 

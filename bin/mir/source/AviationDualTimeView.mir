@@ -683,7 +683,7 @@ _Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeVie
         bf %tmp.10 @_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_196_8_if_false;
 _Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_196_8_if_true:
 _Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_196_26_start:
-[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 197 12 ]
+[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 198 12 ]
         [ "_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_196_26_start" "_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_196_26_stop" ]
         %batLoad.2 = local;
         %tmp.11 = getm $.Toybox.System;
@@ -695,7 +695,7 @@ _Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeVie
         %tmp.17 = getv function %tmp.16 :toNumber;
         %tmp.18 = invoke %tmp.16 %tmp.17();
         lputv %batLoad.2 %tmp.18;
-[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 198 12 ]
+[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 199 12 ]
         %tmp.19 = getm $.Toybox.Lang;
         %tmp.20 = getv function %tmp.19 :format;
         %tmp.21 = "$1$";
@@ -707,89 +707,144 @@ _Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeVie
         %tmp.28 = "%";
         %tmp.29 = add %tmp.27 %tmp.28;
         lputv %batString.1 %tmp.29;
-[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 200 12 ]
-_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_200_12_if_stmt:
-        %tmp.31 = lgetv %batLoad.2;
-        %tmp.32 = 5.0;
-        %tmp.33 = lt %tmp.31 %tmp.32;
-        bf %tmp.33 @_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_200_12_if_false;
-_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_200_12_if_true:
-_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_200_31_start:
-[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 201 16 ]
-        %tmp.35 = getv ? :batteryDisplay;
-        %tmp.36 = getv function %tmp.35 :setColor;
-        %tmp.37 = getm $.Toybox.Graphics;
-        %tmp.38 = getv %tmp.37 :COLOR_RED;
-        invoke %tmp.35 %tmp.36(%tmp.38);
-_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_200_31_stop:
-        goto @_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_200_12_if_end;
-_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_200_12_if_false:
-[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 202 19 ]
-_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_202_19_if_stmt:
-        %tmp.40 = lgetv %batLoad.2;
-        %tmp.41 = 25.0;
-        %tmp.42 = lt %tmp.40 %tmp.41;
-        bf %tmp.42 @_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_202_19_if_false;
-_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_202_19_if_true:
-_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_202_39_start:
-[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 203 16 ]
-        %tmp.44 = getv ? :batteryDisplay;
-        %tmp.45 = getv function %tmp.44 :setColor;
-        %tmp.46 = getm $.Toybox.Graphics;
-        %tmp.47 = getv %tmp.46 :COLOR_YELLOW;
-        invoke %tmp.44 %tmp.45(%tmp.47);
-_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_202_39_stop:
-        goto @_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_202_19_if_end;
-_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_202_19_if_false:
-_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_204_19_start:
-[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 205 16 ]
-        %tmp.49 = getv ? :batteryDisplay;
-        %tmp.50 = getv function %tmp.49 :setColor;
-        %tmp.51 = getm $.Toybox.Graphics;
-        %tmp.52 = getv %tmp.51 :COLOR_DK_GREEN;
-        invoke %tmp.49 %tmp.50(%tmp.52);
-_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_204_19_stop:
-_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_202_19_if_end:
-_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_200_12_if_end:
+[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 201 12 ]
+_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_201_12_if_stmt:
+_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_201_16_begin:
+        %tmp.31 = getm $.Toybox.System;
+        %tmp.33 = const :SCREEN_SHAPE_SEMI_OCTAGON;
+        %tmp.34 = canhazplz %tmp.31 %tmp.33;
+        %tmp.35 = dup %tmp.34;
+        bf %tmp.35 @_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_202_16_end;
+_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_202_16_true:
+        %tmp.36 = getm $.Toybox.System;
+        %tmp.37 = getv function %tmp.36 :getDeviceSettings;
+        %tmp.38 = invoke %tmp.36 %tmp.37();
+        %tmp.39 = getv %tmp.38 :screenShape;
+        %tmp.40 = getm $.Toybox.System;
+        %tmp.41 = getv %tmp.40 :SCREEN_SHAPE_SEMI_OCTAGON;
+        %tmp.42 = ne %tmp.39 %tmp.41;
+        %tmp.43 = and %tmp.34 %tmp.42;
+        push %tmp.43;
+_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_202_16_end:
+        %tmp.44 = phi [%tmp.35 @_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_201_16_begin] [%tmp.43 @_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_202_16_true] [%tmp.44 @_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_202_16_end];
+        bf %tmp.44 @_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_201_12_if_false;
+_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_201_12_if_true:
+_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_202_91_start:
+[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 204 16 ]
+_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_204_16_if_stmt:
+        %tmp.46 = lgetv %batLoad.2;
+        %tmp.47 = 5.0;
+        %tmp.48 = lt %tmp.46 %tmp.47;
+        bf %tmp.48 @_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_204_16_if_false;
+_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_204_16_if_true:
+_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_204_35_start:
+[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 205 20 ]
+        %tmp.50 = getv ? :batteryDisplay;
+        %tmp.51 = getv function %tmp.50 :setColor;
+        %tmp.52 = getm $.Toybox.Graphics;
+        %tmp.53 = getv %tmp.52 :COLOR_RED;
+        invoke %tmp.50 %tmp.51(%tmp.53);
+_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_204_35_stop:
+        goto @_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_204_16_if_end;
+_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_204_16_if_false:
+[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 206 23 ]
+_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_206_23_if_stmt:
+        %tmp.55 = lgetv %batLoad.2;
+        %tmp.56 = 25.0;
+        %tmp.57 = lt %tmp.55 %tmp.56;
+        bf %tmp.57 @_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_206_23_if_false;
+_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_206_23_if_true:
+_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_206_43_start:
+[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 207 20 ]
+        %tmp.59 = getv ? :batteryDisplay;
+        %tmp.60 = getv function %tmp.59 :setColor;
+        %tmp.61 = getm $.Toybox.Graphics;
+        %tmp.62 = getv %tmp.61 :COLOR_YELLOW;
+        invoke %tmp.59 %tmp.60(%tmp.62);
+_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_206_43_stop:
+        goto @_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_206_23_if_end;
+_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_206_23_if_false:
+_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_208_23_start:
+[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 209 20 ]
+        %tmp.64 = getv ? :batteryDisplay;
+        %tmp.65 = getv function %tmp.64 :setColor;
+        %tmp.66 = getm $.Toybox.Graphics;
+        %tmp.67 = getv %tmp.66 :COLOR_DK_GREEN;
+        invoke %tmp.64 %tmp.65(%tmp.67);
+_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_208_23_stop:
+_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_206_23_if_end:
+_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_204_16_if_end:
+_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_202_91_stop:
+        goto @_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_201_12_if_end;
+_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_201_12_if_false:
+_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_211_19_start:
+[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 212 16 ]
+_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_212_16_if_stmt:
+        %tmp.69 = getv ? :myBackgroundColor;
+        %tmp.70 = 0xFFFFFF;
+        %tmp.71 = eq %tmp.69 %tmp.70;
+        bf %tmp.71 @_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_212_16_if_false;
+_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_212_16_if_true:
+_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_212_51_start:
+[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 213 20 ]
+        %tmp.73 = getv ? :batteryDisplay;
+        %tmp.74 = getv function %tmp.73 :setColor;
+        %tmp.75 = getm $.Toybox.Graphics;
+        %tmp.76 = getv %tmp.75 :COLOR_BLACK;
+        invoke %tmp.73 %tmp.74(%tmp.76);
+_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_212_51_stop:
+        goto @_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_212_16_if_end;
+_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_212_16_if_false:
+_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_214_23_start:
+[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 215 20 ]
+        %tmp.78 = getv ? :batteryDisplay;
+        %tmp.79 = getv function %tmp.78 :setColor;
+        %tmp.80 = getm $.Toybox.Graphics;
+        %tmp.81 = getv %tmp.80 :COLOR_WHITE;
+        invoke %tmp.78 %tmp.79(%tmp.81);
+_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_214_23_stop:
+_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_212_16_if_end:
+_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_211_19_stop:
+_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_201_12_if_end:
 _Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_196_26_stop:
         goto @_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_196_8_if_end;
 _Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_196_8_if_false:
-_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_207_15_start:
-[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 208 12 ]
-        %tmp.53 = " ";
-        lputv %batString.1 %tmp.53;
-[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 209 12 ]
-        %tmp.55 = getv ? :batteryDisplay;
-        %tmp.56 = getv function %tmp.55 :setColor;
-        %tmp.57 = getm $.Toybox.Graphics;
-        %tmp.58 = getv %tmp.57 :COLOR_TRANSPARENT;
-        invoke %tmp.55 %tmp.56(%tmp.58);
-_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_207_15_stop:
+_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_218_15_start:
+[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 219 12 ]
+        %tmp.82 = " ";
+        lputv %batString.1 %tmp.82;
+[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 220 12 ]
+        %tmp.84 = getv ? :batteryDisplay;
+        %tmp.85 = getv function %tmp.84 :setColor;
+        %tmp.86 = getm $.Toybox.Graphics;
+        %tmp.87 = getv %tmp.86 :COLOR_TRANSPARENT;
+        invoke %tmp.84 %tmp.85(%tmp.87);
+_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_218_15_stop:
 _Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_196_8_if_end:
-[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 212 8 ]
-        %tmp.60 = getv ? :batteryDisplay;
-        %tmp.61 = getv function %tmp.60 :setText;
-        %tmp.63 = lgetv %batString.1;
-        invoke %tmp.60 %tmp.61(%tmp.63);
+[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 223 8 ]
+        %tmp.89 = getv ? :batteryDisplay;
+        %tmp.90 = getv function %tmp.89 :setText;
+        %tmp.92 = lgetv %batString.1;
+        invoke %tmp.89 %tmp.90(%tmp.92);
 _Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_191_24_stop:
     }
-    [ @file = "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc"; @line = 216; ]
+    [ @file = "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc"; @line = 227; ]
     function stepsDisp() {
-_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_216_25_start:
-[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 218 8 ]
-        [ "_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_216_25_start" "_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_216_25_stop" ]
+_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_227_25_start:
+[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 229 8 ]
+        [ "_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_227_25_start" "_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_227_25_stop" ]
         %stepLoad.1 = local;
         %tmp.1 = getm $.Toybox.ActivityMonitor;
         %tmp.2 = getv function %tmp.1 :getInfo;
         %tmp.3 = invoke %tmp.1 %tmp.2();
         lputv %stepLoad.1 %tmp.3;
-[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 219 8 ]
-        [ "_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_216_25_start" "_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_216_25_stop" ]
+[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 230 8 ]
+        [ "_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_227_25_start" "_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_227_25_stop" ]
         %steps.2 = local;
         %tmp.4 = lgetv %stepLoad.1;
         %tmp.5 = getv %tmp.4 :steps;
         lputv %steps.2 %tmp.5;
-[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 221 8 ]
+[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 232 8 ]
         %tmp.6 = getm $.Toybox.Lang;
         %tmp.7 = getv function %tmp.6 :format;
         %tmp.8 = "$1$";
@@ -799,20 +854,20 @@ _Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeVie
         %tmp.13 = aputv %tmp.12 0 %tmp.11;
         %tmp.14 = invoke %tmp.6 %tmp.7(%tmp.8, %tmp.13);
         putv self :stepString %tmp.14;
-_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_216_25_stop:
+_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_227_25_stop:
     }
-    [ @file = "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc"; @line = 226; ]
+    [ @file = "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc"; @line = 237; ]
     function dateDisp() {
-_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_226_24_start:
-[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 228 8 ]
+_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_237_24_start:
+[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 239 8 ]
         %tmp.2 = getv ? :View;
         %tmp.3 = getv function %tmp.2 :findDrawableById;
         %tmp.4 = "dateLabel";
         %tmp.5 = invoke %tmp.2 %tmp.3(%tmp.4);
         %tmp.6 = as %tmp.5 Text;
         putv self :dateCalc %tmp.6;
-[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 230 8 ]
-        [ "_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_226_24_start" "_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_226_24_stop" ]
+[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 241 8 ]
+        [ "_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_237_24_start" "_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_237_24_stop" ]
         %dateLoad.1 = local;
         %tmp.7 = getm $.Toybox.Time;
         %tmp.8 = getv %tmp.7 :Gregorian;
@@ -824,8 +879,8 @@ _Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeVie
         %tmp.14 = getv %tmp.13 :FORMAT_MEDIUM;
         %tmp.15 = invoke %tmp.8 %tmp.9(%tmp.12, %tmp.14);
         lputv %dateLoad.1 %tmp.15;
-[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 231 8 ]
-        [ "_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_226_24_start" "_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_226_24_stop" ]
+[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 242 8 ]
+        [ "_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_237_24_start" "_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_237_24_stop" ]
         %dateString.2 = local;
         %tmp.16 = getm $.Toybox.Lang;
         %tmp.17 = getv function %tmp.16 :format;
@@ -845,232 +900,240 @@ _Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeVie
         %tmp.31 = aputv %tmp.30 2 %tmp.29;
         %tmp.32 = invoke %tmp.16 %tmp.17(%tmp.18, %tmp.31);
         lputv %dateString.2 %tmp.32;
-[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 236 8 ]
+[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 247 8 ]
         %tmp.34 = getv ? :dateCalc;
         %tmp.35 = getv function %tmp.34 :setColor;
         %tmp.37 = getv ? :subColorSet;
         invoke %tmp.34 %tmp.35(%tmp.37);
-[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 237 8 ]
+[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 248 8 ]
         %tmp.39 = getv ? :dateCalc;
         %tmp.40 = getv function %tmp.39 :setText;
         %tmp.42 = lgetv %dateString.2;
         invoke %tmp.39 %tmp.40(%tmp.42);
-_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_226_24_stop:
+_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_237_24_stop:
     }
-    [ @file = "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc"; @line = 242; ]
+    [ @file = "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc"; @line = 253; ]
     function mainZone() {
-_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_242_24_start:
-[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 244 8 ]
+_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_253_24_start:
+[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 255 8 ]
         %tmp.2 = getv ? :View;
         %tmp.3 = getv function %tmp.2 :findDrawableById;
         %tmp.4 = "mainTimeAreaLabel";
         %tmp.5 = invoke %tmp.2 %tmp.3(%tmp.4);
         %tmp.6 = as %tmp.5 Text;
         putv self :mainView %tmp.6;
-[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 245 8 ]
+[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 256 8 ]
         %tmp.8 = getv ? :View;
         %tmp.9 = getv function %tmp.8 :findDrawableById;
         %tmp.10 = "mainTimeAreaShadLabel";
         %tmp.11 = invoke %tmp.8 %tmp.9(%tmp.10);
         %tmp.12 = as %tmp.11 Text;
         putv self :mainViewShaddow %tmp.12;
-[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 246 8 ]
+[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 257 8 ]
         %tmp.14 = getv ? :View;
         %tmp.15 = getv function %tmp.14 :findDrawableById;
         %tmp.16 = "zTimeLabel";
         %tmp.17 = invoke %tmp.14 %tmp.15(%tmp.16);
         %tmp.18 = as %tmp.17 Text;
         putv self :dispZuluTime %tmp.18;
-[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 247 8 ]
+[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 258 8 ]
         %tmp.20 = getv ? :View;
         %tmp.21 = getv function %tmp.20 :findDrawableById;
         %tmp.22 = "zuluLabel";
         %tmp.23 = invoke %tmp.20 %tmp.21(%tmp.22);
         %tmp.24 = as %tmp.23 Text;
         putv self :mainZuluOffset %tmp.24;
-[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 248 8 ]
+[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 259 8 ]
         %tmp.26 = getv ? :View;
         %tmp.27 = getv function %tmp.26 :findDrawableById;
         %tmp.28 = "subZuluLabel";
         %tmp.29 = invoke %tmp.26 %tmp.27(%tmp.28);
         %tmp.30 = as %tmp.29 Text;
         putv self :subZuluOffset %tmp.30;
-[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 249 8 ]
+[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 260 8 ]
         %tmp.32 = getv ? :View;
         %tmp.33 = getv function %tmp.32 :findDrawableById;
         %tmp.34 = "stepLabel";
         %tmp.35 = invoke %tmp.32 %tmp.33(%tmp.34);
         %tmp.36 = as %tmp.35 Text;
         putv self :stepDisplay %tmp.36;
-[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 251 8 ]
+[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 262 8 ]
         %tmp.37 = self;
         %tmp.38 = getv function %tmp.37 :normalTime;
         invoke %tmp.37 %tmp.38();
-[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 252 8 ]
+[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 263 8 ]
         %tmp.39 = self;
         %tmp.40 = getv function %tmp.39 :calcZuluTime;
         invoke %tmp.39 %tmp.40();
-[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 253 8 ]
+[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 264 8 ]
         %tmp.41 = self;
         %tmp.42 = getv function %tmp.41 :makeZuluLabel;
         invoke %tmp.41 %tmp.42();
-[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 255 8 ]
+[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 266 8 ]
         %tmp.44 = getv ? :mainView;
         %tmp.45 = getv function %tmp.44 :setColor;
         %tmp.47 = getv ? :clockColorSet;
         invoke %tmp.44 %tmp.45(%tmp.47);
-[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 256 8 ]
+[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 267 8 ]
         %tmp.49 = getv ? :mainViewShaddow;
         %tmp.50 = getv function %tmp.49 :setColor;
         %tmp.52 = getv ? :clockShadSet;
         invoke %tmp.49 %tmp.50(%tmp.52);
-[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 257 8 ]
+[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 268 8 ]
         %tmp.54 = getv ? :mainZuluOffset;
         %tmp.55 = getv function %tmp.54 :setColor;
         %tmp.57 = getv ? :clockColorSet;
         invoke %tmp.54 %tmp.55(%tmp.57);
-[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 258 8 ]
+[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 269 8 ]
         %tmp.59 = getv ? :dispZuluTime;
         %tmp.60 = getv function %tmp.59 :setColor;
         %tmp.62 = getv ? :subColorSet;
         invoke %tmp.59 %tmp.60(%tmp.62);
-[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 259 8 ]
+[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 270 8 ]
         %tmp.64 = getv ? :subZuluOffset;
         %tmp.65 = getv function %tmp.64 :setColor;
         %tmp.67 = getv ? :subColorSet;
         invoke %tmp.64 %tmp.65(%tmp.67);
-[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 260 8 ]
+[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 271 8 ]
         %tmp.69 = getv ? :stepDisplay;
         %tmp.70 = getv function %tmp.69 :setColor;
         %tmp.72 = getv ? :subColorSet;
         invoke %tmp.69 %tmp.70(%tmp.72);
-[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 262 8 ]
-_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_262_8_if_stmt:
+[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 273 8 ]
+_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_273_8_if_stmt:
         %tmp.74 = getv ? :localOrZulu;
-        bf %tmp.74 @_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_262_8_if_false;
-_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_262_8_if_true:
-_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_262_25_start:
-[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 265 12 ]
+        bf %tmp.74 @_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_273_8_if_false;
+_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_273_8_if_true:
+_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_273_25_start:
+[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 276 12 ]
         %tmp.76 = getv ? :mainZuluOffset;
         %tmp.77 = getv function %tmp.76 :setText;
         %tmp.78 = " ";
         invoke %tmp.76 %tmp.77(%tmp.78);
-[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 267 12 ]
+[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 278 12 ]
         %tmp.80 = getv ? :mainView;
         %tmp.81 = getv function %tmp.80 :setText;
         %tmp.83 = getv ? :calcTime;
         invoke %tmp.80 %tmp.81(%tmp.83);
-[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 268 12 ]
+[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 279 12 ]
         %tmp.85 = getv ? :mainViewShaddow;
         %tmp.86 = getv function %tmp.85 :setText;
         %tmp.88 = getv ? :calcTime;
         invoke %tmp.85 %tmp.86(%tmp.88);
-[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 270 12 ]
-_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_270_12_if_stmt:
+[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 281 12 ]
+_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_281_12_if_stmt:
         %tmp.90 = getv ? :timeOrStep;
-        bf %tmp.90 @_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_270_12_if_false;
-_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_270_12_if_true:
-_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_270_28_start:
-[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 273 16 ]
+        bf %tmp.90 @_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_281_12_if_false;
+_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_281_12_if_true:
+_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_281_28_start:
+[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 284 16 ]
         %tmp.92 = getv ? :stepDisplay;
         %tmp.93 = getv function %tmp.92 :setText;
         %tmp.94 = " ";
         invoke %tmp.92 %tmp.93(%tmp.94);
-[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 276 16 ]
+[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 287 16 ]
         %tmp.96 = getv ? :dispZuluTime;
         %tmp.97 = getv function %tmp.96 :setText;
         %tmp.99 = getv ? :zuluTime;
         invoke %tmp.96 %tmp.97(%tmp.99);
-[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 277 16 ]
+[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 288 16 ]
         %tmp.101 = getv ? :subZuluOffset;
         %tmp.102 = getv function %tmp.101 :setText;
         %tmp.104 = getv ? :myZuluLabel;
         invoke %tmp.101 %tmp.102(%tmp.104);
-_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_270_28_stop:
-        goto @_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_270_12_if_end;
-_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_270_12_if_false:
-_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_279_19_start:
-[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 282 16 ]
+_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_281_28_stop:
+        goto @_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_281_12_if_end;
+_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_281_12_if_false:
+_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_290_19_start:
+[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 293 16 ]
         %tmp.106 = getv ? :dispZuluTime;
         %tmp.107 = getv function %tmp.106 :setText;
         %tmp.108 = " ";
         invoke %tmp.106 %tmp.107(%tmp.108);
-[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 283 16 ]
+[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 294 16 ]
         %tmp.110 = getv ? :subZuluOffset;
         %tmp.111 = getv function %tmp.110 :setText;
         %tmp.112 = " ";
         invoke %tmp.110 %tmp.111(%tmp.112);
-[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 285 16 ]
-        %tmp.114 = getv ? :stepDisplay;
-        %tmp.115 = getv function %tmp.114 :setText;
-        %tmp.117 = getv ? :stepString;
-        invoke %tmp.114 %tmp.115(%tmp.117);
-_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_279_19_stop:
-_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_270_12_if_end:
-_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_262_25_stop:
-        goto @_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_262_8_if_end;
-_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_262_8_if_false:
-_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_287_15_start:
-[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 290 12 ]
-        %tmp.119 = getv ? :mainView;
-        %tmp.120 = getv function %tmp.119 :setText;
-        %tmp.122 = getv ? :zuluTime;
-        invoke %tmp.119 %tmp.120(%tmp.122);
-[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 291 12 ]
-        %tmp.124 = getv ? :mainViewShaddow;
-        %tmp.125 = getv function %tmp.124 :setText;
-        %tmp.127 = getv ? :zuluTime;
-        invoke %tmp.124 %tmp.125(%tmp.127);
-[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 293 12 ]
-_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_293_12_if_stmt:
-        %tmp.129 = getv ? :timeOrStep;
-        bf %tmp.129 @_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_293_12_if_false;
-_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_293_12_if_true:
-_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_293_28_start:
+[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 295 16 ]
+        %tmp.113 = self;
+        %tmp.114 = getv function %tmp.113 :stepsDisp;
+        invoke %tmp.113 %tmp.114();
 [ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 296 16 ]
-        %tmp.131 = getv ? :stepDisplay;
-        %tmp.132 = getv function %tmp.131 :setText;
-        %tmp.133 = " ";
-        invoke %tmp.131 %tmp.132(%tmp.133);
-[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 297 16 ]
-        %tmp.135 = getv ? :subZuluOffset;
-        %tmp.136 = getv function %tmp.135 :setText;
-        %tmp.137 = "Local";
-        invoke %tmp.135 %tmp.136(%tmp.137);
-[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 299 16 ]
-        %tmp.139 = getv ? :dispZuluTime;
-        %tmp.140 = getv function %tmp.139 :setText;
-        %tmp.142 = getv ? :calcTime;
-        invoke %tmp.139 %tmp.140(%tmp.142);
-[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 300 16 ]
-        %tmp.144 = getv ? :mainZuluOffset;
-        %tmp.145 = getv function %tmp.144 :setText;
-        %tmp.147 = getv ? :myZuluLabel;
-        invoke %tmp.144 %tmp.145(%tmp.147);
-_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_293_28_stop:
-        goto @_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_293_12_if_end;
-_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_293_12_if_false:
-_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_301_19_start:
-[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 302 16 ]
-        %tmp.149 = getv ? :subZuluOffset;
-        %tmp.150 = getv function %tmp.149 :setText;
-        %tmp.151 = " ";
-        invoke %tmp.149 %tmp.150(%tmp.151);
-[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 303 16 ]
-        %tmp.153 = getv ? :dispZuluTime;
-        %tmp.154 = getv function %tmp.153 :setText;
-        %tmp.155 = " ";
-        invoke %tmp.153 %tmp.154(%tmp.155);
-[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 304 16 ]
-        %tmp.157 = getv ? :stepDisplay;
-        %tmp.158 = getv function %tmp.157 :setText;
-        %tmp.160 = getv ? :stepString;
-        invoke %tmp.157 %tmp.158(%tmp.160);
-_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_301_19_stop:
-_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_293_12_if_end:
-_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_287_15_stop:
-_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_262_8_if_end:
-_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_242_24_stop:
+        %tmp.116 = getv ? :stepDisplay;
+        %tmp.117 = getv function %tmp.116 :setText;
+        %tmp.119 = getv ? :stepString;
+        invoke %tmp.116 %tmp.117(%tmp.119);
+_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_290_19_stop:
+_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_281_12_if_end:
+_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_273_25_stop:
+        goto @_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_273_8_if_end;
+_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_273_8_if_false:
+_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_298_15_start:
+[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 301 12 ]
+        %tmp.121 = getv ? :mainView;
+        %tmp.122 = getv function %tmp.121 :setText;
+        %tmp.124 = getv ? :zuluTime;
+        invoke %tmp.121 %tmp.122(%tmp.124);
+[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 302 12 ]
+        %tmp.126 = getv ? :mainViewShaddow;
+        %tmp.127 = getv function %tmp.126 :setText;
+        %tmp.129 = getv ? :zuluTime;
+        invoke %tmp.126 %tmp.127(%tmp.129);
+[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 304 12 ]
+_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_304_12_if_stmt:
+        %tmp.131 = getv ? :timeOrStep;
+        bf %tmp.131 @_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_304_12_if_false;
+_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_304_12_if_true:
+_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_304_28_start:
+[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 307 16 ]
+        %tmp.133 = getv ? :stepDisplay;
+        %tmp.134 = getv function %tmp.133 :setText;
+        %tmp.135 = " ";
+        invoke %tmp.133 %tmp.134(%tmp.135);
+[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 308 16 ]
+        %tmp.137 = getv ? :subZuluOffset;
+        %tmp.138 = getv function %tmp.137 :setText;
+        %tmp.139 = "Local";
+        invoke %tmp.137 %tmp.138(%tmp.139);
+[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 310 16 ]
+        %tmp.141 = getv ? :dispZuluTime;
+        %tmp.142 = getv function %tmp.141 :setText;
+        %tmp.144 = getv ? :calcTime;
+        invoke %tmp.141 %tmp.142(%tmp.144);
+[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 311 16 ]
+        %tmp.146 = getv ? :mainZuluOffset;
+        %tmp.147 = getv function %tmp.146 :setText;
+        %tmp.149 = getv ? :myZuluLabel;
+        invoke %tmp.146 %tmp.147(%tmp.149);
+_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_304_28_stop:
+        goto @_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_304_12_if_end;
+_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_304_12_if_false:
+_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_312_19_start:
+[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 313 16 ]
+        %tmp.151 = getv ? :subZuluOffset;
+        %tmp.152 = getv function %tmp.151 :setText;
+        %tmp.153 = " ";
+        invoke %tmp.151 %tmp.152(%tmp.153);
+[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 314 16 ]
+        %tmp.155 = getv ? :dispZuluTime;
+        %tmp.156 = getv function %tmp.155 :setText;
+        %tmp.157 = " ";
+        invoke %tmp.155 %tmp.156(%tmp.157);
+[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 315 16 ]
+        %tmp.158 = self;
+        %tmp.159 = getv function %tmp.158 :stepsDisp;
+        invoke %tmp.158 %tmp.159();
+[ "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc" 316 16 ]
+        %tmp.161 = getv ? :stepDisplay;
+        %tmp.162 = getv function %tmp.161 :setText;
+        %tmp.164 = getv ? :stepString;
+        invoke %tmp.161 %tmp.162(%tmp.164);
+_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_312_19_stop:
+_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_304_12_if_end:
+_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_298_15_stop:
+_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_273_8_if_end:
+_Users_jeffreyforste_Garmin_Projects_AviationDualTime_source_AviationDualTimeView_mc_253_24_stop:
     }
 }
 [ @file = "/Users/jeffreyforste/Garmin Projects/AviationDualTime/source/AviationDualTimeView.mc"; @line = 1; ]
