@@ -29,6 +29,11 @@
     <string id="batString">batString</string>
     <string id="YesBat">Show Battery</string>
     <string id="NoBat">Hide Battery</string>
+    <string id="YesWx">Temperature Instead</string>
+
+    <string id="ShowNotesTitle">Display Notifications</string>
+    <string id="ShowNotesPrompt">Display Notifications</string>
+    <string id="ShowNotes">Display Notifications</string>
 
     <string id="ShadOptTitle">Shadow Options</string>
     <string id="ShadOptPrompt">Clock Shadow Options</string>
@@ -55,6 +60,9 @@
 
     <string id="LocalOrZuluTitle">Zulu Time as Primary or Local Time as Primary</string>
     <string id="LocalOrZuluPrompt">Zulu Time as Primary or Local Time as Primary</string>
+
+    <string id="SecOptTitle">Dispaly Seconds Arc</string>
+    <string id="SecOptPrompt">Dispaly Seconds Arc</string>
 
     <string id="Z1">-12+00 </string>
     <string id="Z2">-11+00 </string>

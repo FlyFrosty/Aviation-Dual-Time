@@ -53,19 +53,24 @@
         </settingConfig>
     </setting>
 
-    <setting propertyKey="@Properties.DispBatt" title="@Strings.DispBattTitle" prompt="Strings.DispBattPrompt">
+    <setting propertyKey="@Properties.DispBatt" title="@Strings.DispBattTitle" prompt="@Strings.DispBattPrompt">
         <settingConfig type="list">
             <listEntry value="0">@Strings.YesBat</listEntry>
             <listEntry value="1">@Strings.NoBat</listEntry>
+            <listEntry value="2">@Strings.YesWx</listEntry>
         </settingConfig>
     </setting>
+
+    <setting propertyKey="@Properties.ShowNotes" title="@Strings.ShowNotesTitle" prompt="@Strings.ShowNotesPrompt" >
+        <settingConfig type="boolean" />
+    </setting>   
 
     <setting propertyKey="@Properties.LocalOrZulu" title="@Strings.LocalOrZuluTitle" prompt="@Strings.LocalOrZuluPrompt" >
         <settingConfig type="boolean" />
     </setting>
 
 
-    <setting propertyKey="@Properties.TimeStep" title="@Strings.TimeStepTitle" prompt="Strings.TimeStepPrompt" >
+    <setting propertyKey="@Properties.TimeStep" title="@Strings.TimeStepTitle" prompt="@Strings.TimeStepPrompt" >
         <settingConfig type="boolean" />
     </setting>
 
