@@ -3,6 +3,8 @@ import Toybox.Graphics;
 import Toybox.Lang;
 import Toybox.WatchUi;
 
+import Toybox.Complications;
+
 class Background extends WatchUi.Drawable {
 
     function initialize() {
